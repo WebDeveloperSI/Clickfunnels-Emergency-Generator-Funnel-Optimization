@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Cheap Backup Power — Instant Quote</title>
+<meta name="description" content="Get a free instant online quote for residential emergency backup generator systems. Fast quotes, financing available, licensed electrician." />
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --brand-orange:#b73a10;
+  --accent-yellow:#ffd24d;
+  --cta-blue:#1f7fe3;
+  --muted:#f3f3f3;
+  --dark:#0e0e0e;
+  --card-radius:14px;
+  --max-width:1100px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: "Roboto",system-ui,-apple-system,"Segoe UI",Arial;
+  color:#222;
+  background:
+    linear-gradient(180deg, rgba(183,58,16,0.92), rgba(183,58,16,0.92)),
+    url('') no-repeat center/cover;
+  background-color:var(--brand-orange);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+
+/* General Styles */
+.container{max-width:var(--max-width);margin:28px auto;padding:32px;}
+.kicker{font-family:"Montserrat",sans-serif;color:var(--accent-yellow);font-size:38px;line-height:1;text-shadow:0 3px 0 rgba(0,0,0,0.25);margin:0 0 12px 0;}
+.sub{color:#fff7cf;margin:6px 0 20px 0;font-weight:500;}
+.cta-strap{color:var(--accent-yellow);font-size:22px;font-weight:600;margin-top:8px;}
+.lead-panel{background: rgba(255,255,255,0.03);border-radius:12px;padding:20px;color:white;box-shadow:0 6px 24px rgba(0,0,0,0.35);}
+.lead-title{font-family:"Montserrat",sans-serif;color:var(--accent-yellow);font-size:28px;margin:0 0 12px 0;}
+.form-row{display:flex;flex-direction:column;gap:10px;}
+input[type="text"], input[type="email"], select{padding:12px 14px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.05);color:#fff;outline:none;font-size:15px;}
+input::placeholder{color:rgba(255,255,255,0.6);}
+.btn{display:inline-block;padding:14px 18px;border-radius:40px;background:var(--cta-blue);color:#fff;border:0;font-weight:700;font-size:15px;cursor:pointer;box-shadow:0 8px 18px rgba(31,127,227,0.22);transition:transform .12s ease, box-shadow .12s ease;}
+.btn:active{transform:translateY(1px);}
+.small{font-size:13px;color:#fff7cf;margin-top:8px;}
+.trust{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;}
+.trust .badge{background:rgba(0,0,0,0.35);padding:8px 10px;border-radius:8px;font-weight:700;}
+
+/* Lead Magnet Modal */
+#leadMagnet{
+  display:flex;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+  align-items:center;
+  justify-content:center;
+  z-index:60;
+  opacity:0;
+  animation: fadeIn 0.6s forwards;
+}
+#leadMagnet > div{
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  max-width:520px;
+  width:92%;
+  text-align:left;
+  transform:translateY(-20px);
+  opacity:0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+#lmEmail::placeholder{color:#7a7a7a;}
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+
+/* --- NEW VIDEO STYLES --- */
+.video-section{
+  padding-top: 40px;
+  text-align: center;
+}
+.video-title{
+  font-family:"Montserrat",sans-serif;
+  color:#fff7cf;
+  font-size:24px;
+  margin-bottom: 20px;
+  text-shadow:0 2px 0 rgba(0,0,0,0.15);
+}
+.video-container{
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--card-radius);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+}
+.video-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.video-caption{
+  color: #fff7cf;
+  font-style: italic;
+  margin-top: 15px;
+  font-size: 15px;
+}
+/* ------------------------- */
+
+</style>
+</head>
+<body>
+<main class="container" role="main" aria-labelledby="main-heading">
+  <section class="hero" aria-label="Main offer">
+    <div class="hero-card" id="main-hero">
+      <h1 class="kicker" id="main-heading">Power Will Go Out!</h1>
+      <p class="sub">You can be prepared… but you don't have to spend a fortune on “their systems.” Get a FREE Instant-Online No "B-S" Quote — fast, local, trusted.</p>
+      <p class="cta-strap">Get Your <strong>FREE</strong> Instant Quote — No obligation.</p>
+    </div>
+
+    <aside class="lead-panel" aria-labelledby="lead-title" role="complementary">
+      <h2 class="lead-title" id="lead-title">Get your Quote Now!</h2>
+      <form id="leadForm" class="form-row" aria-describedby="form-desc" novalidate>
+        <div id="form-desc" class="muted-small">Enter details below and get a free instant quote. We respond quickly.</div>
+        <input type="text" id="name" name="name" placeholder="Your Name Here..." required autocomplete="name" />
+        <input type="email" id="email" name="email" placeholder="Your Email Address Here..." required autocomplete="email" />
+        <input type="text" id="city" name="city" placeholder="Your City Here..." required autocomplete="address-level2" />
+        <input type="hidden" name="source" value="ClickFunnels-landing">
+        <input type="hidden" name="campaign" value="backup-power-quote-spring">
+        <input type="hidden" id="lead_tag" name="lead_tag" value="cold">
+        <button class="btn" type="submit" id="submitBtn" aria-live="polite">Click to Receive Instant Quote — Plus $100 Off any quoted price!</button>
+        <div class="small">Or <a href="#" id="bookCall" style="color:#fff;text-decoration:underline">book a call</a> — we'll walk you through options.</div>
+      </form>
+    </aside>
+  </section>
+
+  <section class="video-section">
+    <h2 class="video-title">Why Get Backup Power NOW?</h2>
+    <div class="video-container">
+      <iframe src="https://player.vimeo.com/video/705603972?title=0&byline=0&portrait=0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+        frameborder="0"
+        title="Backup Power Video">
+      </iframe>
+    </div>
+    <p class="video-caption">Watch this 60-second video to see why being prepared pays off.</p>
+  </section>
+  </main>
+
+<div id="leadMagnet">
+  <div>
+    <h2 style="margin-top:0">Get your Instant Quote Now!</h2>
+    <p style="margin:6px 0 12px 0">Get a FREE Instant-Online No "B-S" Quote — fast, local, trusted.</p>
+    <div style="display:flex;gap:8px;">
+      <input id="lmEmail" type="email" placeholder="Write your email" style="flex:1;padding:10px;border-radius:8px;border:1px solid #ddd; color:#7a7a7a;" />
+      <button id="lmSubmit" class="btn" style="border-radius:8px">Send</button>
+    </div>
+    <div style="text-align:right;margin-top:10px">
+      <button id="lmClose" style="background:none;border:0;color:#333;font-weight:700">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Fade-in popup instantly on page load
+window.addEventListener('load', () => {
+  const leadMagnet = document.getElementById('leadMagnet');
+  const popupContent = leadMagnet.querySelector('div');
+  leadMagnet.style.opacity = '1';
+  popupContent.style.transform = 'translateY(0)';
+  popupContent.style.opacity = '1';
+});
+
+// Close popup
+document.getElementById('lmClose').addEventListener('click', () => {
+  const leadMagnet = document.getElementById('leadMagnet');
+  const popupContent = leadMagnet.querySelector('div');
+  popupContent.style.transform = 'translateY(-20px)';
+  leadMagnet.style.opacity = '0';
+  setTimeout(()=>{ leadMagnet.style.display='none'; }, 400);
+});
+
+// Submit popup email
+document.getElementById('lmSubmit').addEventListener('click', () => {
+  const emailInput = document.getElementById('lmEmail');
+  const email = emailInput.value.trim();
+  if(!email || !/^\S+@\S+\.\S+$/.test(email)){
+    alert('Please enter a valid email');
+    return;
+  }
+  alert(`Thank you! Your email (${email}) has been submitted.`);
+  const leadMagnet = document.getElementById('leadMagnet');
+  const popupContent = leadMagnet.querySelector('div');
+  popupContent.style.transform = 'translateY(-20px)';
+  leadMagnet.style.opacity = '0';
+  setTimeout(()=>{ leadMagnet.style.display='none'; }, 400);
+});
+
+// Main form submission (existing AJAX/validation can stay)
+// document.getElementById('year').textContent = new Date().getFullYear(); // Removed since 'year' element doesn't exist.
+</script>
+</body>
+</html>
